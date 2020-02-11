@@ -1,26 +1,30 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
+const axios = require('axios');
 
 const generateMarkdown = profileData => {
   return `
-#${profileData.username}
+##${profileData.username}
+
+<img src="https://img.shields.io/badge/powered%20by-NODE-green" alt="made with node">
 
 ## My Info
-Github Email: [${profileData.email}](mailto:${profileData.email})
-Git Hub Username: ${profileData.username}
+* Github Photo: [${profileData.avatar_url}]
+* Github Email: [${profileData.email}](mailto:${profileData.email})
+* Git Hub Username: ${profileData.username}
 
-### My Project
-Title of the project: ${profileData.title}
-Description of the project: ${profileData.description}
-Anything Needed for install?: ${profileData.install}
-How will this project be used?: ${profileData.usage}
+## My Project
+* Title of the project: ${profileData.title}
+* Description of the project: ${profileData.description}
+* Anything Needed for install?: ${profileData.install}
+* How will this project be used?: ${profileData.usage}
 
-#### Those pesky and annoying legal tid bits
-Which legal lisence does this project have: ${profileData.license}
-Is anyone else offered credit due for this project: ${profileData.contribution}
+## Those pesky and annoying legal tid bits
+* Which legal lisence did this project use?: ${profileData.license}
+* Is anyone else offered credit due for this project?: ${profileData.contribution}
 
-##### How will this project be Tested?
-Very Good Question: ${profileData.test}
+## How will this project be Tested?
+* Very Good Question: ${profileData.test}
 
 
   `
@@ -31,11 +35,6 @@ inquirer.prompt([
     type: 'input',
     message: 'What is your Github username?',
     name: 'username',
-  },
-  {
-    type: 'input',
-    message: 'What is your Github email address?',
-    name: 'email',
   },
   {
     type: 'input',
@@ -74,19 +73,19 @@ inquirer.prompt([
     name: 'test',
   },
 
+])
+.then(inquirerResponse => {
+  const queryUrl = `https://api.github.com/users/${inquirerResponse.username}`;
+  axios.get(queryUrl)
+  .then(({ data: { avatar_url, email } }) => {
+      const profileData = { ...inquirerResponse, avatar_url, email };
+      const finishedMarkdown = generateMarkdown(profileData);
 
-
-]).then(responseObj => {
-  console.log(responseObj);
-  const finishedMarkdown = generateMarkdown(responseObj);
-
-  fs.writeFile('./profile.md', finishedMarkdown, err => {
-    if (err) {
-      return console.log(err);
-    }
-    console.log('success!')
-  })
+      fs.writeFile("./profile.md", finishedMarkdown, err => {
+          if (err) {
+              return console.log(err);
+          }
+          console.log("Success!");
+      });
+  });
 });
-
-
-
