@@ -9,37 +9,36 @@ const generateMarkdown = profileData => {
 ![profile-photo](${profileData.avatar_url})
 
 ### **My Info**
-- **Github Email:** &nbsp; [${profileData.email}](mailto:${profileData.email})
-<br/>
-- **Git Hub Username:**  &nbsp; ${profileData.username}
+**Github Email:** &nbsp; [${profileData.email}](mailto:${profileData.email})
+**Git Hub Username:**  &nbsp; ${profileData.username}
 
 <hr>
 <br/>
 
 ### **My Project**
-- **Title of the project:** &nbsp; ${profileData.title}
-<br/>
-- **Description of the project:** &nbsp; ${profileData.description}
-<br/>
-- **Anything Needed for install?:** &nbsp; ${profileData.install}
-<br/>
-- **How will this project be used?:**  &nbsp; ${profileData.usage}
-<br/>
-- **How will this project be tested?:** &nbsp; ${profileData.test}
+**Title of the project:** &nbsp; ${profileData.title}
+
+**Description of the project:** &nbsp; ${profileData.description}
+
+**Anything Needed for install?:** &nbsp; ${profileData.install}
+
+**How will this project be used?:**  &nbsp; ${profileData.usage}
+
+**How will this project be tested?:** &nbsp; ${profileData.test}
 
 <hr>
 <br/>
 
 ### **Matters of Legality**
-- **Which legal lisence did this project use?:** &nbsp; ${profileData.license}
-<br/>
-- **Is anyone else offered credit due for this project?:** &nbsp; ${profileData.contribution}
+**Which legal lisence did this project use?:** &nbsp; ${profileData.license}
+
+**Is anyone else offered credit due for this project?:** &nbsp; ${profileData.contribution}
 
 <hr>
 <br/>
 
 ### **What does the future hold for this project?**
-- ${profileData.future}
+${profileData.future}
 
 <hr>
 <br/>

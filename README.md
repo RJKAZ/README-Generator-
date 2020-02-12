@@ -4,37 +4,36 @@
 ![profile-photo](https://avatars1.githubusercontent.com/u/55252070?v=4)
 
 ### **My Info**
-- **Github Email:** &nbsp; [rjkaz@comcast.net](mailto:rjkaz@comcast.net)
-<br/>
-- **Git Hub Username:**  &nbsp; rjkaz
+**Github Email:** &nbsp; [rjkaz@comcast.net](mailto:rjkaz@comcast.net)
+**Git Hub Username:**  &nbsp; rjkaz
 
 <hr>
 <br/>
 
 ### **My Project**
-- **Title of the project:** &nbsp; Distort Into Me
-<br/>
-- **Description of the project:** &nbsp; A javascript powered slideshow that slides thru sequential illustrations set to a specific song.
-<br/>
-- **Anything Needed for install?:** &nbsp; Just a HTML5 compatible web browser (otherwise the music might not play)
-<br/>
-- **How will this project be used?:**  &nbsp; Its designed as consumable content to be watched. 
-<br/>
-- **How will this project be tested?:** &nbsp; by running it and playing it to the end
+**Title of the project:** &nbsp; Distort Into Me.
+
+**Description of the project:** &nbsp; A javascript powered slide show of illustrations set to a specific song.
+
+**Anything Needed for install?:** &nbsp; Just an HTML5 compatible web browser.
+
+**How will this project be used?:**  &nbsp; By watching it
+
+**How will this project be tested?:** &nbsp; by running it
 
 <hr>
 <br/>
 
 ### **Matters of Legality**
-- **Which legal lisence did this project use?:** &nbsp; other
-<br/>
-- **Is anyone else offered credit due for this project?:** &nbsp; The coding and illustration work are of my own creation, but the music track "Disort into Me" was produced by the musician Lain Volta Trzaska for his musical project "She" (also known as "shemusic"). Given the limited and educational scope of this project, my use of the song would fall under Fair Use. 
+**Which legal lisence did this project use?:** &nbsp; other
+
+**Is anyone else offered credit due for this project?:** &nbsp; The coding and art are created by myself, but the song track "Disort into Me" was created by the musican Lain Volta Trzaska for his musical project "She". My use of the track would fall under Fair Use.
 
 <hr>
 <br/>
 
 ### **What does the future hold for this project?**
-- Where this is a set story....the next step for the concept would be to require user end input to change the outcome of the story. Kind of like a "Choose your own Adventure" book. 
+To take this projects concept and add user input based interactivity to make it more like a "Choose your own Adventure" book.
 
 <hr>
 <br/>
